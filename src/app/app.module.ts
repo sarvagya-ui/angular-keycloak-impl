@@ -1,4 +1,4 @@
-import { APP_INITIALIZER,NgModule } from '@angular/core';
+import { APP_INITIALIZER, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -9,8 +9,7 @@ import { UserComponent } from './user/user.component';
 import { KeycloakAngularModule, KeycloakService } from 'keycloak-angular';
 import { initializeKeycloak } from './keycloak-utils/app.init';
 
-//primeng module
-import {ProgressSpinnerModule} from 'primeng/progressspinner';
+
 
 @NgModule({
   declarations: [
@@ -23,7 +22,6 @@ import {ProgressSpinnerModule} from 'primeng/progressspinner';
     BrowserModule,
     AppRoutingModule,
     KeycloakAngularModule,
-    ProgressSpinnerModule
   ],
   providers: [
     {
